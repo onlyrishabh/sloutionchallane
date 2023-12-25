@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:hexcolor/hexcolor.dart';
 
 class firstPage extends StatefulWidget {
   const firstPage({Key? key}) : super(key: key);
@@ -16,8 +17,11 @@ class _firstPageState extends State<firstPage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text("Cateogary",style: TextStyle(fontWeight: FontWeight.bold),),
-        backgroundColor: Colors.cyanAccent,
+        title: Text("Cateogary",
+          style: TextStyle(fontWeight: FontWeight.bold,
+            color: HexColor("011A34"),
+          ),),
+        backgroundColor: HexColor("89CFF0"),
       ),
       body: Padding(
         padding: const EdgeInsets.all(30.0),
@@ -41,7 +45,7 @@ class _firstPageState extends State<firstPage> {
                               // mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Text("Food Cateogary", style:
-                                TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.black)),
+                                TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: HexColor("011A34"),)),
 
                                 SizedBox(height: 10,),
                                 Row(
@@ -50,12 +54,16 @@ class _firstPageState extends State<firstPage> {
                                   children: [
 
                                     ElevatedButton(onPressed: (){}, child:  Text("Fruits/Vegetable", style:
-                                    TextStyle(fontSize: 13,color: Colors.black)),),
+                                    TextStyle(fontSize: 13,color: HexColor("011A34").withOpacity(0.8),
+                                    )
+                                    ),
+                                    ),
 
                                     ElevatedButton(onPressed: (){}, child:  Text("Dairy Product", style:
-                                    TextStyle(fontSize: 13,color: Colors.black)),),
-
-
+                                    TextStyle(fontSize: 13,color: HexColor("011A34").withOpacity(0.8)
+                                    ),
+                                    ),
+                                    )
                                   ],
                                 ),
 
@@ -64,14 +72,13 @@ class _firstPageState extends State<firstPage> {
                                   children: [
 
                                     ElevatedButton(onPressed: (){}, child:  Text("Cooked Food", style:
-                                    TextStyle(fontSize: 13,color: Colors.black)),),
+                                    TextStyle(fontSize: 13,color: HexColor("011A34").withOpacity(0.8),)),),
 
                                     ElevatedButton(onPressed: (){}, child:  Text("Packed Food", style:
-                                    TextStyle(fontSize: 13,color: Colors.black)),),
+                                    TextStyle(fontSize: 13,color: HexColor("011A34").withOpacity(0.8),)),),
 
                                   ],
                                 )
-
                               ],
 
                             ),
@@ -94,8 +101,8 @@ class _firstPageState extends State<firstPage> {
                             borderRadius: BorderRadius.circular(10.0), // Adjust the radius as needed
                           ),
                           padding: EdgeInsets.all(20),
-                          backgroundColor: Colors.cyanAccent, // <-- Button color
-                          foregroundColor: Colors.black, // <-- Splash color
+                          backgroundColor: HexColor("6CD0FF"), // <-- Button color
+                          foregroundColor: HexColor("011A34"),// <-- Splash color
                         ),
                       ),
                       SizedBox(height: 15,),
@@ -113,8 +120,8 @@ class _firstPageState extends State<firstPage> {
                             borderRadius: BorderRadius.circular(10.0), // Adjust the radius as needed
                           ),
                           padding: EdgeInsets.all(20),
-                          backgroundColor: Colors.cyanAccent, // <-- Button color
-                          foregroundColor: Colors.black, // <-- Splash color
+                          backgroundColor: HexColor("6CD0FF"), // <-- Button color
+                          foregroundColor: HexColor("011A34"), // <-- Splash color
                         ),
                       ),
                       SizedBox(height: 10,),
@@ -132,8 +139,8 @@ class _firstPageState extends State<firstPage> {
                             borderRadius: BorderRadius.circular(10.0), // Adjust the radius as needed
                           ),
                           padding: EdgeInsets.all(20),
-                          backgroundColor: Colors.cyanAccent, // <-- Button color
-                          foregroundColor: Colors.black, // <-- Splash color
+                          backgroundColor: HexColor("6CD0FF"), // <-- Button color
+                          foregroundColor: HexColor("011A34"), // <-- Splash color
                         ),
                       ),
                       SizedBox(height: 10,),
@@ -168,7 +175,7 @@ class _firstPageState extends State<firstPage> {
                   // ),
 
 
-                  Text("Types Of Food              Quantity",style: TextStyle(color: Colors.black,
+                  Text("Types Of Food              Quantity",style: TextStyle(color: HexColor("011A34"),
                     fontSize: 18,fontWeight: FontWeight.bold,
                   ),),
                   SizedBox(height: 5,),
@@ -182,7 +189,7 @@ class _firstPageState extends State<firstPage> {
                       new Flexible(
                         child: new TextField(
                             decoration: InputDecoration(
-                              border: OutlineInputBorder(),
+                                border: OutlineInputBorder(),
                                 contentPadding: EdgeInsets.all(10)
                             )
                         ),
@@ -203,12 +210,12 @@ class _firstPageState extends State<firstPage> {
                     ],
                   ),
                   SizedBox(height: 10,),
-                  Text("+ADD",style: TextStyle(color: Colors.cyanAccent,
+                  Text("+ADD",style: TextStyle(color: HexColor("6CD0FF"),
                     fontSize: 19,fontWeight: FontWeight.bold,
                   ),),
 
                   SizedBox(height: 10,),
-                  Text("Google Map",style: TextStyle(color: Colors.black,
+                  Text("Google Map",style: TextStyle(color:HexColor("011A34"),
                     fontSize: 18,fontWeight: FontWeight.bold,
                   ),),
 
@@ -222,15 +229,15 @@ class _firstPageState extends State<firstPage> {
                         borderRadius: BorderRadius.circular(10.0), // Adjust the radius as needed
                       ),
                       padding: EdgeInsets.all(20),
-                      backgroundColor: Colors.cyanAccent, // <-- Button color
-                      foregroundColor: Colors.black, // <-- Splash color
+                      backgroundColor:HexColor("6CD0FF"), // <-- Button color
+                      foregroundColor: HexColor("011A34"),// <-- Splash color
                     ),
                   ),
 
                   SizedBox(height: 20,),
 
 
-                  Text("Images            Colabs",style: TextStyle(color: Colors.black,
+                  Text("Images            Colabs",style: TextStyle(color: HexColor("011A34"),
                     fontSize: 18,fontWeight: FontWeight.bold,
                   ),),
                   SizedBox(height: 10,),
@@ -245,8 +252,8 @@ class _firstPageState extends State<firstPage> {
                             borderRadius: BorderRadius.circular(10.0), // Adjust the radius as needed
                           ),
                           padding: EdgeInsets.all(20),
-                          backgroundColor: Colors.cyanAccent, // <-- Button color
-                          foregroundColor: Colors.black, // <-- Splash color
+                          backgroundColor: HexColor("6CD0FF"), // <-- Button color
+                          foregroundColor: HexColor("011A34"), // <-- Splash color
                         ),
                       ),
 
@@ -260,8 +267,8 @@ class _firstPageState extends State<firstPage> {
                             borderRadius: BorderRadius.circular(10.0), // Adjust the radius as needed
                           ),
                           padding: EdgeInsets.all(20),
-                          backgroundColor: Colors.cyanAccent, // <-- Button color
-                          foregroundColor: Colors.black, // <-- Splash color
+                          backgroundColor: HexColor("6CD0FF"), // <-- Button color
+                          foregroundColor: HexColor("011A34"), // <-- Splash color
                         ),
                       ),
                     ],
@@ -273,16 +280,19 @@ class _firstPageState extends State<firstPage> {
               SizedBox(height: 35,),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.cyanAccent,
+                  primary: HexColor("6CD0FF"),
                   onPrimary: Colors.white,
-                  shadowColor: Colors.cyanAccent,
+                  shadowColor: HexColor("6CD0FF"),
                   elevation: 2,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(15.0)),
                   minimumSize: Size(1000, 50),
                 ),
                 onPressed: () {},
-                child: Text('Next'),
+                child: Text('Next',style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600
+                ),),
               )
 
 
