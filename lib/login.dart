@@ -15,7 +15,7 @@ class Login extends StatelessWidget {
       body:
       SingleChildScrollView(reverse: true,
         scrollDirection: Axis.vertical,
-        physics: BouncingScrollPhysics(),
+        physics: const BouncingScrollPhysics(),
         child: Center(
           child: Column(
             children: [
