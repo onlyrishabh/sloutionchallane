@@ -1,5 +1,8 @@
+import 'package:base/FirstPage.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+
+import 'Authentication/auth.dart';
 
 class signup extends StatefulWidget {
   const signup({Key? key}) : super(key: key);
@@ -254,23 +257,50 @@ class _signupState extends State<signup> {
                             SizedBox(
                               height: 40,
                             ),
-                            InkWell(
-                              onTap: () {},
-                              child: Container(
-                                height: height / 20,
-                                width: width / 1.4,
-                                decoration: BoxDecoration(
-                                    color: HexColor("002C59"),
-                                    borderRadius: BorderRadius.circular(21)),
-                                child: const Center(
-                                  child: Text(
+                            // InkWell(
+                            //   onTap: () {
+
+                            //   },
+                            //   child: Container(
+                            //     height: height / 20,
+                            //     width: width / 1.4,
+                            //     decoration: BoxDecoration(
+                            //         color: HexColor("002C59"),
+                            //         borderRadius: BorderRadius.circular(21)),
+                            //     child: const Center(
+                            //       child: Text(
+                            //         "Continue",
+                            //         style: TextStyle(
+                            //             color: Colors.white,
+                            //             fontWeight: FontWeight.w700),
+                            //       ),
+                            //     ),
+                            //   ),
+                            // ),
+                            Container(
+                              height: height / 20,
+                              width: width / 1.4,
+                              decoration: BoxDecoration(
+                                  // color: HexColor("002C59"),
+                                  borderRadius: BorderRadius.circular(21)),
+                              child: ElevatedButton(
+                                  onPressed: () async {
+                                    var email = _emailController.text;
+                                    var password = _passwordController.text;
+                                    await signupp(email, password);
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) =>
+                                              const firstPage(),
+                                        ));
+                                  },
+                                  child: const Text(
                                     "Continue",
                                     style: TextStyle(
                                         color: Colors.white,
                                         fontWeight: FontWeight.w700),
-                                  ),
-                                ),
-                              ),
+                                  )),
                             ),
                           ],
                         ),
