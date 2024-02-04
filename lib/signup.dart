@@ -4,23 +4,20 @@ import 'package:hexcolor/hexcolor.dart';
 
 import 'Authentication/auth.dart';
 
-class signup extends StatefulWidget {
-  const signup({Key? key}) : super(key: key);
+class Signup extends StatefulWidget {
+  const Signup({Key? key}) : super(key: key);
 
   @override
-  State<signup> createState() => _signupState();
+  State<Signup> createState() => _SignupState();
 }
 
-class _signupState extends State<signup> {
+class _SignupState extends State<Signup> {
   @override
   Widget build(BuildContext context) {
     final formkey = GlobalKey<FormState>();
     var size = MediaQuery.of(context).size;
     var height = size.height;
     var width = size.width;
-    String email = '';
-    String password = '';
-    String username = '';
     final _usernameController = TextEditingController();
     final _emailController = TextEditingController();
     final _passwordController = TextEditingController();
@@ -30,7 +27,7 @@ class _signupState extends State<signup> {
         body: SingleChildScrollView(
             reverse: true,
             scrollDirection: Axis.vertical,
-            physics: BouncingScrollPhysics(),
+            physics: const BouncingScrollPhysics(),
             child: Form(
               key: formkey,
               child: Center(
@@ -63,7 +60,7 @@ class _signupState extends State<signup> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              "Create your account",
+                              "Create Your Account",
                               style: TextStyle(
                                 color: HexColor("002C59"),
                                 fontWeight: FontWeight.bold,
@@ -161,7 +158,7 @@ class _signupState extends State<signup> {
                               ),
                             ),
                             SizedBox(
-                              height: 20,
+                              height: 15,
                             ),
                             Container(
                               height: height / 17,
@@ -201,6 +198,9 @@ class _signupState extends State<signup> {
                                 ),
                               ),
                             ),
+                            const SizedBox(
+                              height: 15,
+                            ),
                             Row(
                               children: [
                                 Container(
@@ -226,7 +226,7 @@ class _signupState extends State<signup> {
                                 ),
                               ],
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 10,
                             ),
                             Row(
@@ -254,7 +254,7 @@ class _signupState extends State<signup> {
                                 ),
                               ],
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 40,
                             ),
                             // InkWell(
@@ -284,6 +284,9 @@ class _signupState extends State<signup> {
                                   // color: HexColor("002C59"),
                                   borderRadius: BorderRadius.circular(21)),
                               child: ElevatedButton(
+                                  style: ElevatedButton.styleFrom(
+                                      backgroundColor:
+                                          Color.fromARGB(255, 135, 201, 255)),
                                   onPressed: () async {
                                     var email = _emailController.text;
                                     var password = _passwordController.text;
@@ -298,7 +301,7 @@ class _signupState extends State<signup> {
                                   child: const Text(
                                     "Continue",
                                     style: TextStyle(
-                                        color: Colors.white,
+                                        color: Colors.black,
                                         fontWeight: FontWeight.w700),
                                   )),
                             ),

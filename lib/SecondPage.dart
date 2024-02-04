@@ -25,9 +25,9 @@ class _secondPageState extends State<secondPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: BackButton(),
+        leading: const BackButton(),
         backgroundColor: Colors.cyanAccent,
-        title: Text("Contribute",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
+        title: const Text("Contribute",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
       ),
 
       body: Padding(
@@ -35,7 +35,7 @@ class _secondPageState extends State<secondPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(height: 10,),
+            const SizedBox(height: 10,),
             Text("Select Type",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20)),
             SizedBox(height: 5,),
             // Padding(

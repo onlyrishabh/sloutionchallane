@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>372130039565-grigb71ocdqg95i3jbta3sk9ak6aa8un.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.372130039565-grigb71ocdqg95i3jbta3sk9ak6aa8un</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>372130039565-0tsm7srqaqf1rhtnp28hj9649bbsn0tj.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD62ttzWzueUaq_8tjJTGWQf2PBfPL1QQc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>372130039565</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.base</string>
+	<key>PROJECT_ID</key>
+	<string>ngo-community</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ngo-community.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:372130039565:ios:3caf649c7c4d7979fcd244</string>
+	<key>DATABASE_URL</key>
+	<string>https://ngo-community-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
