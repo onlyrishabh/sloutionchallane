@@ -95,12 +95,12 @@ class _firstPageState extends State<firstPage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "Explore All Charities",
+                          "Explore More",
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 18),
                         ),
                         Text(
-                          "Below we have various way for you",
+                          "Below we have various for you",
                           style: TextStyle(
                             fontSize: 14,
                             color: Colors.grey,
@@ -166,7 +166,7 @@ class _firstPageState extends State<firstPage> {
                               content: Column(
                                 // mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  const Text("Food Cateogary",
+                                  const Text("Food Category",
                                       style: TextStyle(
                                           fontSize: 15,
                                           fontWeight: FontWeight.bold,
@@ -181,14 +181,14 @@ class _firstPageState extends State<firstPage> {
                                     children: [
                                       ElevatedButton(
                                         onPressed: () {},
-                                        child: const Text("Fruits/Vegetable",
+                                        child: const Text("Fruits/Vegetables",
                                             style: TextStyle(
-                                                fontSize: 13,
+                                                fontSize: 12,
                                                 color: Colors.black)),
                                       ),
                                       ElevatedButton(
                                         onPressed: () {},
-                                        child: const Text("Dairy Product",
+                                        child: const Text("Dairy Products",
                                             style: TextStyle(
                                                 fontSize: 13,
                                                 color: Colors.black)),
@@ -230,7 +230,7 @@ class _firstPageState extends State<firstPage> {
                           },
                           child: const Center(
                               child: Icon(Icons.fastfood_outlined,
-                                  color: Colors.white, size: 45.0)),
+                                  color: Colors.white, size: 30.0)),
                           style: ElevatedButton.styleFrom(
                             shadowColor: Colors.black,
                             elevation: 5,
@@ -251,7 +251,7 @@ class _firstPageState extends State<firstPage> {
                         const Text(
                           "Food",
                           style: TextStyle(
-                              fontSize: 17, fontWeight: FontWeight.bold),
+                              fontSize: 16, fontWeight: FontWeight.bold),
                         ),
                       ],
                     ),
@@ -266,7 +266,7 @@ class _firstPageState extends State<firstPage> {
                           onPressed: () {},
                           child: const Center(
                               child: Icon(Icons.shopping_cart_outlined,
-                                  color: Colors.white, size: 45.0)),
+                                  color: Colors.white, size: 30.0)),
                           style: ElevatedButton.styleFrom(
                             shadowColor: Colors.black,
                             elevation: 5,
@@ -288,7 +288,7 @@ class _firstPageState extends State<firstPage> {
                         const Text(
                           "Clothing",
                           style: TextStyle(
-                              fontSize: 17, fontWeight: FontWeight.bold),
+                              fontSize: 16, fontWeight: FontWeight.bold),
                         ),
                       ],
                     ),
@@ -303,7 +303,7 @@ class _firstPageState extends State<firstPage> {
                           onPressed: () {},
                           child: const Center(
                               child: Icon(Icons.more_horiz,
-                                  color: Colors.white, size: 45.0)),
+                                  color: Colors.white, size: 30.0)),
                           style: ElevatedButton.styleFrom(
                             shadowColor: Colors.black,
                             elevation: 5,
@@ -323,7 +323,7 @@ class _firstPageState extends State<firstPage> {
                         const Text(
                           "More",
                           style: TextStyle(
-                              fontSize: 17, fontWeight: FontWeight.bold),
+                              fontSize: 16, fontWeight: FontWeight.bold),
                         ),
                       ],
                     ),
@@ -336,7 +336,7 @@ class _firstPageState extends State<firstPage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
-                      "Types Of Food              Quantity",
+                      "Type of Food          Quantity",
                       style: TextStyle(
                         color: Colors.black,
                         fontSize: 18,
@@ -346,7 +346,7 @@ class _firstPageState extends State<firstPage> {
                     const SizedBox(
                       height: 5,
                     ),
-                    new Row(
+                    Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -371,7 +371,7 @@ class _firstPageState extends State<firstPage> {
                                 border: OutlineInputBorder(
                                   borderSide: BorderSide.none,
                                   borderRadius:
-                                      BorderRadius.all(Radius.circular(17.0)),
+                                      BorderRadius.all(Radius.circular(16.0)),
                                 ),
                                 // hintText: "TextField 2"
                               ),
@@ -446,7 +446,7 @@ class _firstPageState extends State<firstPage> {
                       "+ADD",
                       style: TextStyle(
                         color: Color(0xFF00B2FF),
-                        fontSize: 19,
+                        fontSize: 16,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -475,14 +475,14 @@ class _firstPageState extends State<firstPage> {
                             // width: 150,
                             child: const Icon(
                               Icons.map_outlined, color: Colors.white,
-                              size: 40.0,
+                              size: 30.0,
                               // shadows: <Shadow>[Shadow(color: Colors.black, blurRadius: 2.0, offset: Offset(0.0, 0.8))],
                             ),
                           ),
                           // SizedBox(width: 80,),
                           Container(
                             height: 40,
-                            width: 180,
+                            width: 150,
                             // color: Colors.white,
                             decoration: BoxDecoration(
                               boxShadow: [
@@ -498,7 +498,7 @@ class _firstPageState extends State<firstPage> {
                                 child: Text(
                               "Google Map",
                               style: TextStyle(
-                                fontSize: 25,
+                                fontSize: 18,
                               ),
                             )),
                           )
@@ -552,7 +552,7 @@ class _firstPageState extends State<firstPage> {
                           // SizedBox(width: 80,),
                           Container(
                             height: 40,
-                            width: 180,
+                            width: 150,
                             // color: Colors.white,
                             decoration: BoxDecoration(
                               boxShadow: [
@@ -568,7 +568,7 @@ class _firstPageState extends State<firstPage> {
                                 child: Text(
                               "Images",
                               style: TextStyle(
-                                fontSize: 25,
+                                fontSize: 18,
                               ),
                             )),
                           )
@@ -616,7 +616,7 @@ class _firstPageState extends State<firstPage> {
                           // SizedBox(width: 80,),
                           Container(
                             height: 40,
-                            width: 180,
+                            width: 150,
                             // color: Colors.white,
                             decoration: BoxDecoration(
                               boxShadow: [
@@ -632,7 +632,7 @@ class _firstPageState extends State<firstPage> {
                                 child: Text(
                               "Colabs",
                               style: TextStyle(
-                                fontSize: 25,
+                                fontSize: 18,
                               ),
                             )),
                           )
