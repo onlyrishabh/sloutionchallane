@@ -1,6 +1,6 @@
-# base
+# Danation
 
-A new Flutter project.
+A Social (NGO) project.
 
 ## Getting Started
 
