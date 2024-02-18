@@ -20,7 +20,7 @@ class _firstPageState extends State<firstPage> {
           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
         ),
         // backgroundColor: Color(b74093),
-        backgroundColor: const Color(0xFFEFCCC1),
+        backgroundColor: Color(219354),
       ),
       body: Container(
         width: double.infinity,

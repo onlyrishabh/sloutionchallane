@@ -1,8 +1,10 @@
 // ignore_for_file: unused_import
 
 import 'package:base/SecondPage.dart';
+import 'package:base/google_map.dart';
 import 'package:base/login.dart';
 import 'package:base/Signup.dart';
+import 'package:base/nav.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'FirstPage.dart';
@@ -28,7 +30,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Signup(),
+      home: MyHomePage(),
     );
   }
 }
